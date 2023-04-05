@@ -37,6 +37,13 @@
     position: absolute;
     top: 40px;
     right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    fill: var(--color-primary-dark);
+    background-color: transparent;
+    border: none;
   }
 
   &__form-field {

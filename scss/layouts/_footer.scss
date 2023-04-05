@@ -16,17 +16,35 @@
   }
 
   &::before {
-    width: 180px;
-    height: 120px;
-    left: 0;
-    background-image: url('../images/decor-bread-small.png');
+    width: 100px;
+    height: 90px;
+    right: 0;
+    background-image: url('../images/decor-bread-small-mobile.png');
+
+    @media screen and (min-width: $bp-tablet) {
+      left: 0;
+      right: auto;
+      width: 180px;
+      height: 120px;
+      background-image: url('../images/decor-bread-small.png');
+    }
   }
 
   &::after {
-    width: 380px;
-    height: 190px;
-    right: 0;
-    background-image: url('../images/decor-bread-large.png');
+    width: 85px;
+    height: 205px;
+    top: 0;
+    left: 0;
+    background-image: url('../images/decor-bread-large-mobile.png');
+
+    @media screen and (min-width: $bp-tablet) {
+      right: 0;
+      top: auto;
+      left: auto;
+      width: 380px;
+      height: 190px;
+      background-image: url('../images/decor-bread-large.png');
+    }
   }
 
   &__container {
@@ -53,9 +71,23 @@
     }
   }
 
-  &__logo,
-  &__menu {
+  &__logo {
     flex-grow: 1;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+  }
+
+  &__address-list,
+  &__address-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
   }
 
   &__address-list,
@@ -74,15 +106,27 @@
     color: var(--color-brand-normal);
   }
 
-  &__address-icon {
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__socials-icon {
     fill: var(--color-primary-light);
   }
 
-  &__address-icon:hover {
+  &__socials-icon:hover {
     fill: var(--color-brand-normal);
   }
 
   &__address-copyright {
+    color: var(--color-secondary-dark);
     font-size: 14px;
   }
 }

@@ -1,7 +1,8 @@
 .advantages-section {
-  padding: 16px 0;
+  padding: 40px 0 20px;
 
   @media screen and (min-width: $bp-tablet) {
+    padding: 16px 0;
     background-color: var(--color-brand-normal);
   }
 
