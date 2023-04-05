@@ -1,1 +1,1 @@
-# genius-lesson-project
+# Сучасна пекарня "SHOP bakery"
