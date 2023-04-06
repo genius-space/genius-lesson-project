@@ -25,10 +25,14 @@
   &__menu {
     display: none;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: flex;
       gap: 64px;
       flex-grow: 1;
+      justify-content: flex-end;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       justify-content: center;
     }
   }
@@ -49,7 +53,7 @@
     border: none;
     fill: var(--color-primary-light);
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: none;
     }
   }

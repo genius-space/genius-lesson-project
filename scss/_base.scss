@@ -9,13 +9,13 @@ html {
 }
 
 body {
+  margin: 0;
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  margin: 0;
 
   @media screen and (min-width: $bp-tablet) {
     font-size: 18px;
